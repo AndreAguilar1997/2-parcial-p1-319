@@ -1,0 +1,16 @@
+def calcu(x:Int, y:Int, operacion:String):Int={
+operacion match {
+case "suma"=>suma(x,y)
+case "resta"=>resta(x,y)
+case "multi"=>multi(x,y)
+}
+} 
+
+scala> val ejemplo = calcu(2,5,"suma")
+val ejemplo: Int = 7
+
+scala> val ejemplo = calcu(2,5,"resta")
+val ejemplo: Int = -3
+
+scala> val ejemplo = calcu(2,5,"multi")
+val ejemplo: Int = 10
